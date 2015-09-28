@@ -20,3 +20,16 @@
 (package-initialize) ;; You might already have this line
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; python
+(require 'python)
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+
+;; auto-completion
+(require 'jedi)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
+(require 'projectile)

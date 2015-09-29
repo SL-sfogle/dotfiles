@@ -11,6 +11,7 @@ Emacs
 * brew install ctags-exuberant
 * recentf (from http://emacsredux.com/blog/2013/04/05/recently-visited-files/)
 * cask
+* flycheck
 
 To do
 -----

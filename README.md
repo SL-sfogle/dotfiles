@@ -12,6 +12,8 @@ Emacs
 * recentf (from http://emacsredux.com/blog/2013/04/05/recently-visited-files/)
 * cask
 * flycheck
+  * `pip install pylint`, `pip install flake8`
+  * use `M-x flycheck-verify-setup` to check it's set up correctly
 
 To do
 -----

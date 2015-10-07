@@ -33,3 +33,6 @@
 (setq jedi:complete-on-dot t)
 
 (require 'projectile)
+
+;; get rid of that dreaded whitespace!
+(add-hook 'before-save-hook 'delete-trailing-whitespace)

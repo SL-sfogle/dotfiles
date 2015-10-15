@@ -18,4 +18,5 @@ Emacs
 To do
 -----
 * Look at magit emacs plugin
+* Consider js2-mode
 * Add shell startup file

@@ -39,6 +39,10 @@
   (append flycheck-disabled-checkers
     '(json-jsonlist)))
 
+;; javascript indent level
+(setq js-indent-level 2)
+
+
 ;; python
 (require 'python)
 (autoload 'python-mode "python-mode" "Python Mode." t)
@@ -51,6 +55,8 @@
 (setq jedi:complete-on-dot t)
 
 (require 'projectile)
+
+(require 'dirtree)
 
 ;; get rid of that dreaded whitespace!
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

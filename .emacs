@@ -11,6 +11,8 @@
  ;; If there is more than one, they won't work right.
  )
 
+(setq frame-background-mode 'dark)
+
 (require 'package) ;; You might already have this line
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -56,7 +58,8 @@
 
 (require 'projectile)
 
-(require 'dirtree)
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
 
 ;; get rid of that dreaded whitespace!
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

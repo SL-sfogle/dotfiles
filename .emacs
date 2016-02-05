@@ -47,6 +47,9 @@
   (append flycheck-disabled-checkers
     '(json-jsonlist)))
 
+;; use spaces, not tabs, for indent
+(setq-default indent-tabs-mode nil)
+
 ;; javascript indent level
 (setq js-indent-level 2)
 
